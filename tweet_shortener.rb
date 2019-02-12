@@ -24,6 +24,7 @@ def word_substituter(string)
     dict_hash.each do |original, replacement|
       if word.downcase == original
         word = replacement
+      end
     end
   end
   tweet_array.join(" ")
