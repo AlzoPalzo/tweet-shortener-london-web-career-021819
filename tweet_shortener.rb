@@ -16,7 +16,7 @@ def dictionary
 end
 
 def word_substituter(string)
-  tweet_array = string.split
+  tweet_array = string.split(" ")
   dict_hash = dictionary
 
   tweet_array = tweet_array.map do |word|
