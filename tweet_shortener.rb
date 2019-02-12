@@ -19,16 +19,14 @@ end
 def word_substituter(string)
   tweet_array = string.split(" ")
   dict_hash = dictionary
+  new_tweet = []
 
-  tweet_array = tweet_array.map do |word|
-    dict_hash.each do |original, replacement|
-      if word.downcase == original
-        word = replacement
-      end
+  tweet_array.each do |word|
+    if dict_hash.values.include?(word.downcase)
+      new_tweet << dict_hash[word]
     end
-  end
-  tweet_array.join(" ")
-  tweet_array
+  end  
+  new_tweet.join(" ")
 end
 
 def bulk_tweet_shortener
