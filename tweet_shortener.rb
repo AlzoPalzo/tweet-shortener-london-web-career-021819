@@ -25,7 +25,7 @@ def word_substituter(string)
     if dict_hash.values.include?(word.downcase)
       new_tweet << dict_hash[word]
     end
-  end  
+  end
   new_tweet.join(" ")
 end
 
