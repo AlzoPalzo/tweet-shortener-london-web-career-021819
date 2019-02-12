@@ -24,6 +24,8 @@ def word_substituter(string)
   tweet_array.each do |word|
     if dict_hash.keys.include?(word.downcase)
       new_tweet << dict_hash[word]
+    else
+      new_tweet << word
     end
   end
   new_tweet.join(" ")
