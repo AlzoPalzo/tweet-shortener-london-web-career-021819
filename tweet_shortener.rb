@@ -22,7 +22,7 @@ def word_substituter(string)
   new_tweet = []
 
   tweet_array.each do |word|
-    if dict_hash.values.include?(word.downcase)
+    if dict_hash.keys.include?(word.downcase)
       new_tweet << dict_hash[word]
     end
   end
