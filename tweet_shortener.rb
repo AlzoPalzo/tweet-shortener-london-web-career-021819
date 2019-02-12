@@ -9,12 +9,14 @@ def dictionary
     "for" => "4",
     "four" => "4",
     "be" => "b",
-    "at" => "@"
-    "and" => "&"
+    "at" => "@",
+    "and" => "&",
   }
 end
 
-def word_substituter
+def word_substituter(string)
+  tweet_array = string.split
+  
 
 end
 
